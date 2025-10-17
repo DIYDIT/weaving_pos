@@ -24,7 +24,6 @@
   </div>
 
   <script>
-    // 🧩 設定你的 Google Apps Script URL
     const SHEET_URL = "https://script.google.com/macros/s/AKfycbyPwtz3iQnuW-AgevyncjI8Tpzn-py_tvk-K4l-ctHx9KyRge4r0ezTO6mHbG3brUbPfA/exec"; 
 
     // 商品資料（可自行修改）
@@ -137,7 +136,7 @@
       mode: 'cors'
     });
 
-    const result = await res.json(); // ✅ 直接解析 JSON
+    const result = await res.json(); 
 
     if (result.status === 'success') {
       let successMessage = `${paymentType} 結帳成功！`;
